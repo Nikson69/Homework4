@@ -1,0 +1,72 @@
+.starfield {
+	position: relative;
+	margin: 20px auto 0; 
+	width: 650px;
+	height: 160px;
+	background: url(bg_space.gif) 0 0 repeat-x #141923;
+	overflow: hidden;
+}
+	.starfield .stars {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: url(bg_stars.gif) repeat-x;
+	}
+	
+	.starfield .path {
+		position: absolute;
+		left: 125px;
+		top: 110px;
+		width: 400px;
+		height: 20px;
+		overflow: visible;
+		background: url(bg_path.gif) 0 3px repeat-x;
+	}
+		.starfield .path ins {
+			position: absolute;
+			top: 5px;
+			font-size: 20px;
+			text-decoration: none;
+			color: #ffba00;
+		}
+			.starfield .path img {
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+			.starfield .path ins.pointA {
+				left: 0;
+				margin-left: -15px;
+			}
+			.starfield .path ins.pointB {
+				left: 100%;
+				margin-left: 6px;
+			}
+		.starfield .ufo {
+			position: absolute;
+			top: 40px;
+			left: 85px;
+			background: url(sprite_ufo.png) repeat-x;
+			width: 85px;
+			height: 54px;
+			overflow: visible;
+		}
+		#ufoInfo3{
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			display: none;
+			padding: 2px 5px;
+			font-size: 12px;
+			text-align: center;
+			background: #ddd;
+		}
+	
+	.controls {
+		position: absolute;
+		width: 100px;
+		left: 10px;
+		top: 10px;
+	}
